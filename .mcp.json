@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "reflect-memory": {
-      "command": "node",
-      "args": ["scripts/server.mjs"],
+      "command": "npx",
+      "args": ["-y", "reflect-memory-mcp"],
       "env": {
         "REFLECT_MEMORY_API_KEY": "${REFLECT_MEMORY_API_KEY}"
       }
