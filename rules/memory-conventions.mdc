@@ -1,0 +1,22 @@
+---
+description: Conventions for writing and reading Reflect Memory entries. Apply when the user asks to save, write, pull, or browse memories.
+alwaysApply: false
+---
+
+# Reflect Memory Conventions
+
+When writing memories, follow this structure:
+
+- **Title**: Short descriptor in "Topic — Summary" format
+- **Content**: Use the Change / Reason / Impact / Open Questions format for project state updates. Use plain prose for general notes.
+- **Tags**: Always include relevant category tags (e.g. `project_state`, `architecture`, `decision`, `bug_fix`, `feature`). Tag liberally — it costs nothing and aids retrieval.
+- **allowed_vendors**: Default to `["*"]` so all AI agents can access the memory. Only restrict when the user specifies.
+
+When reading memories:
+
+- Use `get_latest_memory` for "pull latest" or "what's new" requests.
+- Use `browse_memories` for discovery — it returns summaries without full content.
+- Use `get_memories_by_tag` when the user asks about a topic (e.g. "what do we know about auth?").
+- Use `get_memory_by_id` only when you already have a UUID from browse results.
+
+Never fabricate memory content. If the API returns no results, tell the user plainly.

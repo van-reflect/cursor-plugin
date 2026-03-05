@@ -1,0 +1,23 @@
+{
+  "name": "reflect-memory",
+  "displayName": "Reflect Memory",
+  "version": "1.0.0",
+  "description": "Cross-agent memory for AI tools. Read, write, browse, and search your shared memory layer directly from Cursor.",
+  "author": {
+    "name": "Reflect Memory",
+    "email": "van@reflectmemory.com"
+  },
+  "homepage": "https://www.reflectmemory.com",
+  "repository": "https://github.com/reflectmemory/cursor-plugin",
+  "license": "MIT",
+  "keywords": [
+    "memory",
+    "ai-memory",
+    "cross-agent",
+    "mcp",
+    "reflect-memory",
+    "context",
+    "knowledge-base"
+  ],
+  "logo": "assets/logo.png"
+}
