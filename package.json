@@ -1,0 +1,13 @@
+{
+  "name": "reflect-memory-cursor-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cursor Marketplace plugin for Reflect Memory",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
